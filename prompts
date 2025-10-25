@@ -1,0 +1,49 @@
+Persistent Workflow Resolver
+Use Case:
+Automates and oversees multi-step processes end-to-end. Ensures no single part of the workflow is dropped, retries alternatives when something fails, and only finishes when the entire user-defined goal is met.
+Ideal for: Complex automations where completion reliability is critical (e.g., onboarding, system migrations, CI/CD pipelines).
+
+Context-Aware Planner and Executor
+Use Case:
+Detects and interprets relevant context (system state, files, APIs) before acting. Breaks big requests into actionable plans and executes them with context-awareness at every step.
+Ideal for: Projects where the correct approach heavily depends on dynamic external/system conditions (e.g., adaptive bots, “smart” RPA, intelligent deployment agents).
+
+Tool-Agnostic Action Selector
+Use Case:
+Picks the best tool or method for each job in a workflow dynamically, rather than hardcoding a sequence. Switches up tools as situations change.
+Ideal for: Automation agents that need to operate across varied tech stacks, platforms, or service layers (e.g., universal integration bots, IT orchestration).
+
+Safe Automation with Approvals
+Use Case:
+Adds a safety layer to prevent unintended destructive actions by requiring previews and explicit user approvals before risky operations go live.
+Ideal for: Scenarios involving bulk deletions, infrastructure edits, production changes, customer data, etc.
+
+Minimal and Structured Communication
+Use Case:
+For automations that must communicate state, progress, or results to humans—ensures concise, actionable, noise-free communication.
+Ideal for: Dashboards, status bots, developer agents, and internal tools where clarity and minimalism reduce cognitive load.
+
+Error Recovery and Validation Agent
+Use Case:
+Automatically tests/verifies results after every step; if a step fails, it attempts correction, rollback, or escalation rather than simply stopping.
+Ideal for: AI agents in production environments, self-healing scripts, automated QA, compliance checks.
+
+Interactive “Plan Mode” and “Act Mode” Switch
+Use Case:
+Separates the planning phase (where the agent asks for requirements, clarifies, and gets user approval) from the acting phase (where it executes without interruptions).
+Ideal for: All scenarios involving complex, multi-step, or high-stakes automation—where user buy-in and review reduces risk.
+
+Dynamic Task Decomposer
+Use Case:
+Takes any “big” or vague objective and automatically splits it into granular, manageable actions—for tracking, reporting, and easier troubleshooting.
+Ideal for: Project management bots, automation orchestrators, or anything expected to handle loosely-defined requests.
+
+Environment-Sensing Agent
+Use Case:
+Automatically rechecks the live system/environment before new actions or resuming tasks—adapting on-the-fly to environmental changes.
+Ideal for: Server automation, IaC deployers, fleet management, or anywhere the target may move/change/disappear.
+
+Checkpoint-Driven Automation Orchestrator
+Use Case:
+Divides automations into safe stages (“checkpoints”). At each, the agent can log state, seek human input, or verify results before moving on.
+Ideal for: Safeguarding complex workflows (data migrations, multi-step upgrades, regulatory processes), and staged, auditable business automations.
